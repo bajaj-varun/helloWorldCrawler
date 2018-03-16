@@ -20,4 +20,6 @@ class PharmaSpider(scrapy.Spider):
                 txt = txt.encode("utf-8").strip()
                 
             print('Link', link.encode("utf-8"), 'Text', txt)
+
+            #links.xpath('//a[text()[re:test(.,"news|media|person|people|invest|science|health|partner*|research")]]').extract()
             
